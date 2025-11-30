@@ -101,7 +101,15 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
+        <iframe
+          width="100%"
+          height="450"
+          src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_ksDajxloSExQTK2EhkAl4287LGRhaPqPE"
+          title="Crack4Music Records Playlist"
+          style={{ border: 0, borderRadius: '12px', maxWidth: '800px' }}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </RevealFx>
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
