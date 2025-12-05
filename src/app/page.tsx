@@ -15,6 +15,7 @@ import { home, about, person, baseURL, routes } from "@/resources";
 import { Mailchimp } from "@/components";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+import { NeonOrbs } from "@/components/ui/neon-orbs";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -100,16 +101,8 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <iframe
-          width="100%"
-          height="450"
-          src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_ksDajxloSExQTK2EhkAl4287LGRhaPqPE"
-          title="Crack4Music Records Playlist"
-          style={{ border: 0, borderRadius: '12px', maxWidth: '800px' }}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
+      <RevealFx translateY="16" delay={0.6} fillWidth>
+        <NeonOrbs />
       </RevealFx>
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
